@@ -22,8 +22,6 @@ function draw() {
   background("black");  
   drawSprites();
 
-  hasCollided();
-
  if(hasCollided(bullet, wall))
 {
  bullet.velocityX=0;
@@ -42,7 +40,7 @@ wall.shapeColor=color(0,255,0);
  }
 }
 
-function hasCollided (Lbullet, Lwall) {
+function hasCollided (lbullet, lwall) {
 
   bulletRightEdge=lbullet.x +lbullet.width;
   
