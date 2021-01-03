@@ -43,12 +43,12 @@ wall.shapeColor=color(0,255,0);
 function hasCollided (lbullet, lwall) {
 
   bulletRightEdge=lbullet.x +lbullet.width;
-  
   wallLeftEdge=lwall.x; 
-if (bulletRightEdge=wallLeftEdge) 
+if (bulletRightEdge>=wallLeftEdge) 
   {
   return true 
   }
+  else
   {
   return false;
   }
